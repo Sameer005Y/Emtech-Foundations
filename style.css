@@ -1,0 +1,528 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    /* overflow-x: hidden; */
+}
+body{
+  background-color: #fff9f1;
+}
+
+.wrapper{
+    width: 100%;
+    height: 100%;
+    overflow-x: none;
+}
+
+.birdseye-header{
+    /* background-color: lightgrey; */
+    align-items: center;
+}
+
+.birdseye-header .nav-wrap .container{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.birdseye-header .nav-wrap .container .logo img{
+    height: 50px;
+    width: 150px;
+    margin: auto;
+}
+
+.birdseye-header .nav-wrap .container .desktop-nav .wsite-menu-default{
+    display: flex;
+    justify-content: space-around;
+}
+.birdseye-header .nav-wrap .container .desktop-nav .wsite-menu-default li{
+    list-style-type: none;
+    align-items: center;
+    margin: 20px 10px;
+}
+.birdseye-header .nav-wrap .container .desktop-nav .wsite-menu-default li a{
+    text-decoration: none;
+    color: black;
+    /* display: inline-block;
+    transition: transform 0.3s ease; */
+    transition: transform 0.3s ease;
+    transform-origin: center;
+}
+.birdseye-header .nav-wrap .container .desktop-nav .wsite-menu-default li a:hover{
+    color: darkred;
+    font-weight: 500;
+}
+
+.birdseye-header .nav-wrap .container .hamburger-menu{
+  display: none;
+}
+
+/******  Banner Section  *****/
+
+.banner-wrap{
+    background-color: darkgrey;
+    /* display: block; */
+    height: 80vh;
+    width: 100%;
+    background-image: url('./Images/bhim_sir_banner_img3.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+}
+
+.banner-wrap::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black */
+    z-index: 1;
+  }
+
+.banner-wrap h1{
+    color: #ffffff;
+    letter-spacing: 2px;
+    line-height: 1.2;
+    position: relative;
+    font: 4rem;
+    font-family: "Druk Wide Web Super Regular";
+    text-transform: uppercase;
+    font-size: 3rem;
+    z-index: 2;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
+}
+
+/*** Main Body Section ****/
+
+.main-wrap{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    /* margin: 30px 150px; */
+    padding: 50px 0px;
+    background-color: lightgrey;
+    border: 2px solid black;
+}
+
+.main-wrap .text-block{
+    width: 50%;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: flex-start;
+    position: sticky;
+    top: 0%;
+    height: 100vh;
+    padding: 3rem;
+    /* box-shadow: 2px 0 5px rgba(0,0,0,0.1); */
+}
+
+.main-wrap .text-block .txtblock-container{
+    width: 400px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.main-wrap .text-block h1{
+    text-align: left;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    font-weight: 900;
+    margin: 10px 0 20px;
+    color: #111;
+}
+
+.main-wrap .text-block p{
+    text-align: left;
+    font-family:Arial, Helvetica, sans-serif;
+    line-height:1.5;
+    font-size: 18px;
+}
+
+.main-wrap .scroll-container{
+    width: 50%;
+  /* position: relative; */
+}
+
+.main-wrap .scroll-container .cards{
+    position: sticky;
+    top: 100px; /* distance from top where card sticks */
+    height: 300px; /* fixed smaller height */
+    width: 80%;
+    margin: 20vh auto; /* creates scroll space between cards */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: #fff;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.main-wrap .scroll-container .cards a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Druk Wide Web Super Regular";
+    color: white;
+}
+
+.card1 { 
+    color: white !important;
+    background-image: url(./Images/automotive.webp);
+    background-size: cover;
+    background-position: center;
+    /* background: #16a085; z-index: 1; */
+ }
+.card2 { 
+    /* background: #2980b9; z-index: 2;  */
+    background-image: url(./Images/healthcare.webp);
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.card3 { 
+    /* background: #8e44ad; z-index: 3; */
+    background-image: url(./Images/defence2.avif);
+    background-size: cover;
+    background-position: center;
+ }
+.card4 { 
+    /* background: #d35400; z-index: 4; */
+    background-image: url(./Images/r&d.jpg);
+    background-size: cover;
+    background-position: center;
+ }
+
+ .card2 a, .card4 a{
+    color: black !important;
+ }
+
+.main-wrap .industries-we-serve{
+    width: 50%;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+/* .main-wrap .industries-we-serve .cards{
+    height: 300px;
+    width: 550px;
+    border: 2px solid red;
+    border-radius: 20px;
+} */
+
+
+/****  Slider 1 & 2   ****/
+
+body {
+    /* background: #111; */
+    overflow-x: hidden;
+  }
+
+  .slider-container {
+    width: 100%;
+    overflow: hidden;
+    
+  }
+
+  .slider {
+    overflow: hidden;
+    white-space: nowrap;
+    margin-bottom: 30px;
+    /* border: 2px solid black; */
+    /* background: #222; */
+  }
+
+.slide-track {
+    display: inline-flex;
+    animation: scroll-left 20s linear infinite;    
+}
+
+.slider.reverse .slide-track {
+      animation: scroll-right 20s linear infinite;
+    }
+
+
+  .slide-track img {
+      width: 400px;
+      height: 150px;
+      object-fit: cover;
+      margin-right: 20px;
+      border-radius: 10px;
+  }
+  @keyframes scroll-left {
+      0% {
+        transform: translateX(0%);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+
+    @keyframes scroll-right {
+      0% {
+        transform: translateX(-50%);
+      }
+      100% {
+        transform: translateX(0%);
+      }
+    }
+/***** About Us *****/
+
+.about-us{
+     display: flex;
+    justify-content: space-between;
+   /* margin: 250px 100px; */
+   align-items: flex-start;
+   padding: 60px 80px;
+    gap: 40px;
+  /* flex-wrap: wrap; */
+  /* flex-direction: row; */
+    
+}
+
+.about-us .aboutus-txt{
+    /* text-align: center;
+    width: 50%;
+    align-items: center; */
+    flex: 1;
+    min-width: 300px;
+}
+
+.about-us .aboutus-txt .aboutus-txt-container{
+    width: 500px;
+}
+.about-us .aboutus-txt h1{
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+      color: #001f3f;
+      font-size: 42px;
+      font-weight: 800;
+    margin-bottom: 20px;
+}
+.about-us .aboutus-txt p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 1.7;
+    color: #333;
+}
+
+.about-us .aboutus-img{
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutus-img img{
+    max-width: 100%;
+    height: auto;
+    border: 8px solid #e4c27b;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+/**** Contact Us  ****/
+
+.contact-section {
+  font-family: 'Nunito', sans-serif;
+    max-width: 1100px;
+    margin: 30px auto 200px;
+    text-align: center;
+    /* padding: 0 20px; */
+
+    padding: 60px 20px;
+    background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+  }
+
+  .contact-section::before,
+.contact-section::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.2;
+  z-index: 0;
+}
+
+
+.contact-section::before {
+  width: 300px;
+  height: 300px;
+  background: #ff6f61;
+  top: -100px;
+  right: -100px;
+}
+
+.contact-section::after {
+  width: 350px;
+  height: 350px;
+  background: #85d3d0;
+  bottom: -100px;
+  left: -100px;
+}
+  
+  .availability {
+    font-size: 16px;
+  margin-bottom: 10px;
+  }
+  
+  .title {
+    font-size: 40px;
+    font-weight: 900;
+    margin: 10px 0 20px;
+    color: #111;
+  }
+  
+  .description {
+    font-size: 16px;
+    max-width: 700px;
+    margin: auto;
+    margin-bottom: 50px;
+    line-height: 1.6;
+  }
+  
+  .contact-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .contact-card {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px 25px;
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+
+  .contact-card:hover {
+   transform: translateY(-10px);
+}
+
+  .contact-cards .contact-card i{
+    font-size: 36px;
+    color: #222;
+    margin-bottom: 15px;
+  }
+  
+  .icon {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  .contact-card h2 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  
+  .contact-card p {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+  
+  .info {
+    font-weight: bold;
+    margin-top: 10px;
+    color: #000;
+  }
+
+/***** Mobile View  ******/
+  @media(max-width:767px){
+    body{
+      height: 100%;
+      width: 100%;
+    }
+
+    .birdseye-header .nav-wrap .container .desktop-nav{
+      display: none;
+    }
+    .birdseye-header .nav-wrap .container .hamburger-menu{
+      display: contents;
+    }
+    .birdseye-header .nav-wrap .container .hamburger-menu a i{
+      color: black;
+      font-size: 30px;
+      cursor: pointer;
+    }
+
+    /******  Banner Section  *****/
+.wrapper{
+  border: 2px solid red;
+  width: 100%;      /* or */
+  max-width: 100%;
+}
+
+.banner-wrap h1{
+    font-size: 1.5rem;
+}
+
+/*** Main Body Section ****/
+
+  
+.main-wrap{
+    flex-direction: column;
+    height: auto;
+}
+.main-wrap .text-block{
+    width: 80vw;
+    height: auto;
+    position: relative;
+    box-shadow: none;
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+
+  .main-wrap .scroll-container .cards{
+    font-size: 0.5rem;
+    position: relative;
+    top: auto;
+    height: 180px;
+    margin: 2rem auto;
+    width: 90%;
+    opacity: 1;
+    transform: translateY(50px);
+    align-items: center;
+
+}
+  /**** About US *****/
+    .about-us{
+     display: flex;
+     flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    gap: 40px;
+}
+.about-us .aboutus-txt .aboutus-txt-container{
+    width: 300px;
+}
+
+
+    /**** Contact US *****/
+    .contact-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+/******Tablet View ******/
+@media(min-width:1024px){
+
+}
