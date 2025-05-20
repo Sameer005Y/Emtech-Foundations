@@ -465,7 +465,6 @@ body {
 
     /******  Banner Section  *****/
 .wrapper{
-  border: 2px solid red;
   width: 100%;      /* or */
   max-width: 100%;
 }
